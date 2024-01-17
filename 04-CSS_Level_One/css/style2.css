@@ -5,3 +5,12 @@
 .secondDiv{
     color: red;
 }
+
+#singledout{
+    color:green;
+    text-decoration: line-through; /* จะเป็นการขีดเส้นกลางตัวอักษร */
+}
+
+* {
+    color: black; /* element ทั้งหมดจะเป็นสีดำ */
+}
