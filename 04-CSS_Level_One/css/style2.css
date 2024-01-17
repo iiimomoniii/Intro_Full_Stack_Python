@@ -14,3 +14,16 @@
 * {
     color: black; /* element ทั้งหมดจะเป็นสีดำ */
 }
+
+h3 + ul{
+    border: 4px dotted purple; /* องค์ประกอบ h3 ที่อยู่ถัดจาก ul กำหนดให้ border เป็น ... */
+}
+
+li a {
+    color: red /* ภายใต้ li กำหนดให้ a มีสีแดง */
+}
+
+li a[href="www.npr.org"]{ /* ภายใต้ li กำหนดให้ a ที่มี  href = www.npr.org ตัวหนีงสือสีฟ้า ขอบสีส้ม*/
+    color:blue;
+    border:5px solid orange;
+}

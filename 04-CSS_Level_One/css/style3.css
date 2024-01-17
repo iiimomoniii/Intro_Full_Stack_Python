@@ -1,0 +1,14 @@
+
+/* li ทั้งหมด จะเป็นสีแดง ถ้า sub ข้างในมี class topitems ก็จะเปลี่ยนเป็นสำน้ำเงิน*/
+li {
+    color:red;
+}
+
+.topitems{
+    color: blue;
+}
+
+/* ถ้ามี id=two เพิ่มเข้ามาก็จะเพิมขอบให้ */
+#two {
+    border:3px solid black;
+}
