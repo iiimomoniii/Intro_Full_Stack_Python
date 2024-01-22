@@ -1,0 +1,13 @@
+Example document arrtributes
+- document.URL
+- document.body
+- document.head
+- document.links
+
+Example for grabbing element from the DOM
+- document.getElementById()
+- document.getElementByClassName()
+- document.getElementByTagName()
+- document.querySelector()
+- document.querySelectorAll()
+
