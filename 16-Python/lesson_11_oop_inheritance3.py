@@ -5,13 +5,7 @@ class Book():
         self.pages = pages
     
     def __str__(self):
-        return "hello"
+        return "Title: {}, Author: {},Pages: {}".format(self.title,self.author,self.pages)
 
-b = Book("Python","jose", 200)
+b = Book("Python","jose", 2002)
 print(b)
-#=> hello
-
-mylist = [1,2,3]
-print(mylist)
-#=> [1, 2, 3]
-
