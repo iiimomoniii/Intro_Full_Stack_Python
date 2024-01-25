@@ -15,6 +15,22 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# #=> Intro/17-Django-Python/My_Django_Stuff/first_project/first_project
+
+# print path of settings.py
+# print (__file__)
+# #=> /Users/natdanai/Documents/Projects/Udemy/Intro/17-Django-Python/My_Django_Stuff/first_project/first_project/settings.py
+
+# print base dir
+# print (BASE_DIR)
+# #=> /Users/natdanai/Documents/Projects/Udemy/Intro/17-Django-Python/My_Django_Stuff/first_project
+
+# print join path with templates folder
+# print (Path.joinpath(BASE_DIR,"templates"))
+# #=> /Users/natdanai/Documents/Projects/Udemy/Intro/17-Django-Python/My_Django_Stuff/first_project/templates
+
+# create template dir 
+TEMPLATE_DIR = Path.joinpath(BASE_DIR,"templates")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -55,7 +71,7 @@ ROOT_URLCONF = 'first_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
