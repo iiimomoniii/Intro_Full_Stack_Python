@@ -1,0 +1,4 @@
+__init__.py => diractory can be treated as a package
+admin.py => space for register model
+apps.py => specific configurations
+models.py => store the application's data models
