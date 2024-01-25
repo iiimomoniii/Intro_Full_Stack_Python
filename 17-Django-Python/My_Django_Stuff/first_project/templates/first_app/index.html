@@ -1,13 +1,16 @@
+
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Django Page</title>
 </head>
 <body>
-    <h1>Hello this is index.html</h1>
-    <!-- {{ insert_me }} will show value from views.py-->
-    {{ insert_me }}
+    <h1>Hello this is django</h1>
+    <img src="{% static '/images/django.png' %}" alt="Uh Oh, didn't show!">
+
 </body>
 </html>
