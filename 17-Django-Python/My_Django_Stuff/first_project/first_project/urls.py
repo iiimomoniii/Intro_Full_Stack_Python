@@ -23,6 +23,8 @@ urlpatterns = [
     path('', views.index, name='index'), #=> http://127.0.0.1:8000
     #Map url inside urls.py inside first_app 
     path('first_app/',include('first_app.urls')), #=> http://127.0.0.1:8000/first_app/
+    #Map url help.html
+    path('help/',include('first_app.urls')), #=> http://127.0.0.1:8000/help/help
     path('admin/', admin.site.urls),
 
 ]
