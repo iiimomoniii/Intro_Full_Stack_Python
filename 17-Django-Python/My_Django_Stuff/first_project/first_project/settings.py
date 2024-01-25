@@ -32,6 +32,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # create template dir 
 TEMPLATE_DIR = Path.joinpath(BASE_DIR,"templates")
 
+# create static dir
+STATIC_DIR = Path.joinpath(BASE_DIR,"static")
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -133,6 +136,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [STATIC_DIR, ]
+
+# print (STATICFILES_DIRS)
+# #=> http://127.0.0.1:8000/static/images/
+# EX #=> http://127.0.0.1:8000/static/images/django.png
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
