@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 from first_app import views
 
 urlpatterns = [
     #Map url and index html in first_app -> views.py
-    path('', views.index, name='index'),
+    path('', views.index, name='index'), #=> http://127.0.0.1:8000
+    #Map url inside urls.py inside first_app 
+    path('first_app/',include('first_app.urls')), #=> http://127.0.0.1:8000/first_app/
     path('admin/', admin.site.urls),
 
 ]
